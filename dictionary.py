@@ -1,8 +1,37 @@
-student_grades = [9.1, 8.8, 7.5, 6.7]
+# Dictionary
+dictionary = {
+    'a': 1,
+    'b': 2
+}
 
-students_grades = {"Dany": 9.1, "Sim": 8.8, "Jhon": 7.5}
+print(dictionary['a'])
 
-mysum = sum(students_grades.values())
-length = len(students_grades)
-mean = mysum / length
-print(mean)
+user = {
+    'basket': [1, 2, 3],
+    'greet': 'hello',
+    'age': 20
+}
+
+user2 = dict(name='dany')
+
+print(user.get('age', 55)) # default value
+print(user2)
+
+# clear
+print('\n')
+print('clear')
+user.clear()
+print(user)
+
+# copy
+user2 = user.copy()
+print(user)
+print(user2)
+
+# pop
+print(user.pop('age'))
+print(user)
+
+# update
+print(user.update({'age': 33}))
+print(user)
